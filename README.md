@@ -1,4 +1,6 @@
 # AWS CodePipeline and S3 static website hosting
+>Region: `UAE me-central-1` because I'll probably forget
+
 This is a simple aws codepipeline automation to continuously deploy any changes in the source code to the [static website hosted in AWS S3 bucket](http://basel-resume-s3.s3-website.me-central-1.amazonaws.com). 
 
 1. [Create a S3 bucket](#creaet-a-s3-bucket)
