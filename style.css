@@ -273,6 +273,47 @@ h2::after {
     background: #5a6268;
 }
 
+/* Certifications Section */
+.certifications {
+    background-color: var(--background-color);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.certification-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.certification-item:hover {
+    transform: translateY(-5px);
+}
+
+.certification-item > div {
+    margin: 0 auto;
+}
+
+.certification-item p {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+
 /* Contact Section */
 .contact {
     text-align: center;
