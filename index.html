@@ -1,182 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basel Mohamed Abouelnour - DevOps / Cloud Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basel Mohamed Abouelnour - DevOps / Cloud Engineer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="#home" class="nav-logo">Basel Mohamed Abouelnour</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
+<header class="header">
+  <nav class="navbar">
+    <a href="#home" class="nav-logo">Basel Mohamed Abouelnour</a>
+    <ul class="nav-menu">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-btn" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+      <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+    </div>
+  </nav>
+</header>
 
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Hello, I'm Basel Mohamed Abouelnour</h1>
-            <p>A Passionate DevOps / Cloud Engineer based in Cairo, Egypt</p>
-            <a href="#projects" class="btn">View My Work</a>
+<section id="home" class="hero fade-up">
+  <div class="hero-text">
+    <h1 id="typing-text"></h1>
+    <p>A Passionate DevOps / Cloud Engineer based in Cairo, Egypt</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+
+<section id="about" class="about fade-up">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="Profile-Picture-2.jpeg" alt="Basel Mohamed Abouelnour"/>
+      </div>
+      <div class="about-text">
+        <p>I am a Computer Science graduate with a strong foundation in Networking, Linux system administration, Shell scripting, Python programming, DevOps concepts, and cloud computing, focusing on AWS. I am seeking to improve my knowledge and experience in DevOps & cloud by working on real-life business-level projects.</p>
+        <p><strong>Education:</strong><br/>B. Computer Science, IT Department, Beni Suef University<br/>Grade: Very Good</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="experience fade-up">
+  <div class="container">
+    <h2>Internships & Trainings</h2>
+    <div class="experience-item">
+      <h3>DevOps Internship</h3>
+      <p><strong>Orange Digital Center</strong> | (Dec 2024)</p>
+      <ul>
+        <li>Created CI/CD pipelines using Jenkins.</li>
+        <li>Worked with containers using Docker and Kubernetes.</li>
+        <li>Gained practical expertise with Linux, Bash Scripting, and Git version control.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Digital Egypt Pioneer Initiative, Cisco Network Administration</h3>
+      <p><strong>MCIT</strong> | (Oct 2024)</p>
+      <ul>
+        <li>Acquired knowledge of CCNA and CCNP ENCOR and how to configure Cisco devices.</li>
+        <li>Designed a redundant network for a hospital, considering QOS and best practices.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills fade-up">
+  <div class="container">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item"><i class="fab fa-linux"></i><p>Linux Administration</p></div>
+      <div class="skill-item"><i class="fab fa-aws"></i><p>Cloud Computing (AWS)</p></div>
+      <div class="skill-item"><i class="fa-solid fa-network-wired"></i><p>CCNA</p></div>
+      <div class="skill-item"><i class="fa-solid fa-database"></i><p>Database (SQL)</p></div>
+      <div class="skill-item"><i class="fab fa-docker"></i><p>Containerization & Orchestration</p></div>
+      <div class="skill-item"><i class="fab fa-python"></i><p>Programming (Python, bash)</p></div>
+      <div class="skill-item"><i class="fa-solid fa-terminal"></i><p>Version Control (GIT, GitHub)</p></div>
+      <div class="skill-item"><i class="fab fa-jenkins"></i><p>CI tools (Jenkins)</p></div>
+      <div class="skill-item"><i class="fa-solid fa-leaf"></i><p>Configuration Management (Ansible)</p></div>
+      <div class="skill-item"><i class="fa-solid fa-cube"></i><p>Terraform basics</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects fade-up">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-info">
+          <h3>The Weather App CI/CD</h3>
+          <p>A CI/CD pipeline for deploying a Python weather app using Docker, Jenkins, and Ansible.</p>
+          <a href="https://github.com/Basel-Abouelnour/weather-app-cicd.git" class="btn-secondary" target="_blank">View on GitHub</a>
         </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="Profile-Picture-2.jpeg" alt="Basel Mohamed Abouelnour">
-                </div>
-                <div class="about-text">
-                    <p>I am a Computer Science graduate with a strong foundation in Networking, Linux system administration, Shell scripting, Python programming, DevOps concepts, and cloud computing, focusing on AWS. I am seeking to improve my knowledge and experience in DevOps & cloud by working on real-life business-level projects.</p>
-                    <p><strong>Education:</strong><br>
-                    B. Computer Science, IT Department, Beni Suef University<br>
-                    Grade: Very Good</p>
-                </div>
-            </div>
+      </div>
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Static Resume on AWS S3</h3>
+          <p>Built and deployed a static personal resume website hosted on S3 with AWS CodePipeline.</p>
+          <a href="https://github.com/Basel-Abouelnour/aws-codepipeline-s3-resume.git" class="btn-secondary" target="_blank">View on GitHub</a>
         </div>
-    </section>
-
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Internships & Trainings</h2>
-            <div class="experience-item">
-                <h3>DevOps Internship</h3>
-                <p><strong>Orange Digital Center</strong> | (Dec 2024)</p>
-                <ul>
-                    <li>Created CI/CD pipelines using Jenkins.</li>
-                    <li>Worked with containers using Docker and Kubernetes.</li>
-                    <li>Gained practical expertise with Linux, Bash Scripting, and Git version control.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Digital Egypt Pioneer Initiative, Cisco Network Administration</h3>
-                <p><strong>MCIT</strong> | (Oct 2024)</p>
-                <ul>
-                    <li>Acquired knowledge of CCNA and CCNP ENCOR and how to configure Cisco devices.</li>
-                    <li>Designed a redundant network for a hospital, considering QOS and best practices.</li>
-                </ul>
-            </div>
+      </div>
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Hospital Network Design</h3>
+          <p>Designed and implemented a hospital network with high redundancy, availability, and security.</p>
+          <a href="https://github.com/Basel-Abouelnour/DEPI-Hospital-Network-Design-G5.git" class="btn-secondary" target="_blank">View on GitHub</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item"><i class="fab fa-linux"></i><p>Linux Administration</p></div>
-                <div class="skill-item"><i class="fab fa-aws"></i><p>Cloud Computing (AWS)</p></div>
-                <div class="skill-item"><i class="fa-solid fa-network-wired"></i><p>CCNA</p></div>
-                <div class="skill-item"><i class="fa-solid fa-database"></i><p>Database (SQL)</p></div>
-                <div class="skill-item"><i class="fab fa-docker"></i><p>Containerization & Orchestration</p></div>
-                <div class="skill-item"><i class="fab fa-python"></i><p>Programming (Python, bash)</p></div>
-                <div class="skill-item"><i class="fa-solid fa-terminal"></i><p>Version Control (GIT, GitHub)</p></div>
-                <div class="skill-item"><i class="fab fa-jenkins"></i><p>CI tools (Jenkins)</p></div>
-                <div class="skill-item"><i class="fa-solid fa-leaf"></i><p>Configuration Management (Ansible)</p></div>
-                <div class="skill-item"><i class="fa-solid fa-cube"></i><p>Terraform basics</p></div>
-            </div>
-        </div>
-    </section>
+<section id="certifications" class="certifications fade-up">
+  <div class="container">
+    <h2>Certifications</h2>
+    <div class="certifications-grid">
+      <a href="https://www.credly.com/badges/b3214b00-5c87-4f07-b106-89cb27fce554/public_url" target="_blank" class="cert-card">
+        <img src="https://images.credly.com/size/110x110/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS Solutions Architect Associate Badge"/>
+        <p>AWS Solutions Architect Associate</p>
+      </a>
+      <a href="https://www.credly.com/badges/6b9db813-615a-4188-822e-0c78e32d91d4/public_url" target="_blank" class="cert-card">
+        <img src="https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Cloud Practitioner Badge"/>
+        <p>AWS Cloud Practitioner</p>
+      </a>
+      <a href="https://www.credly.com/badges/aed9d2be-2ba7-4576-9273-4ab8c5cbf90a/public_url" target="_blank" class="cert-card">
+        <img src="https://images.credly.com/size/110x110/images/f28f1d88-428a-47f6-95b5-7da1dd6c1000/KCNA_badge.png" alt="Kubernetes and Cloud Native Associate Badge"/>
+        <p>Kubernetes and Cloud Native Associate</p>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <!-- <img src="https://via.placeholder.com/400x250" alt="Weather App CI/CD"> -->
-                    <div class="project-info">
-                        <h3>The Weather App CI/CD</h3>
-                        <p>A CI/CD pipeline for deploying a Python weather app using Docker for containerization, Jenkins for continuous integration, and Ansible for configuration management.</p>
-                        <a href="https://github.com/Basel-Abouelnour/weather-app-cicd.git" class="btn-secondary" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                <!-- <img src="https://via.placeholder.com/400x250" alt="Weather App CI/CD"> -->
-                    <div class="project-info">
-                        <h3>Static website resume hosted on AWS S3</h3>
-                        <p>Built and deployed a static personal resume website hosted on S3. Integrated AWS CodePipeline for automated deployments on every GitHub update.</p>
-                        <a href="https://github.com/Basel-Abouelnour/aws-codepipeline-s3-resume.git" class="btn-secondary" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <!-- <img src="https://via.placeholder.com/400x250" alt="Hospital Network Design"> -->
-                    <div class="project-info">
-                        <h3>Hospital Network Design</h3>
-                        <p>Designed and implemented a Hospital Network with high redundancy, availability, and security over wireless & wired networks, using best practices from CCNA & CCNP ENCOR protocols.</p>
-                        <a href="https://github.com/Basel-Abouelnour/DEPI-Hospital-Network-Design-G5.git" class="btn-secondary" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2>Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-item">
-                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b3214b00-5c87-4f07-b106-89cb27fce554" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    </div>
-                <div class="certification-item">
-                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6b9db813-615a-4188-822e-0c78e32d91d4" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    </div>
-                <div class="certification-item">
-                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="aed9d2be-2ba7-4576-9273-4ab8c5cbf90a" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    </div>
-                <!-- <div class="certification-item">
-                    <img src="logos/cisco-networking-academy.png" alt="Cisco Network Administration" style="max-width: 100%; height: 100px;">
-                    <p>Digital Egypt Pioneers Program | Cisco Network Administration Track</p>
-                </div> -->
-            </div>
-        </div>
-    </section>
+<section id="contact" class="contact fade-up">
+  <div class="container">
+    <h2>Get In Touch</h2>
+    <p>I'm currently open to new opportunities. Feel free to reach out!</p>
+    <a href="mailto:basel.m.abouelnuor@gmail.com" class="btn">Email Me</a>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/basel-abouelnour" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Basel-Abouelnour" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>I'm currently open to new opportunities. Feel free to reach out!</p>
-            <a href="mailto:basel.m.abouelnuor@gmail.com" class="btn">Email Me</a>
-            <div class="social-links">
-                <a href="www.linkedin.com/in/basel-abouelnour" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Basel-Abouelnour" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </section>
+<footer class="footer">
+  <p>basel.m.abouelnuor@gmail.com | +201066080070 | Cairo, Egypt</p>
+  <p>&copy; 2025 Basel Mohamed Abouelnour. All Rights Reserved.</p>
+</footer>
 
-    <footer class="footer">
-         <p>basel.m.abouelnuor@gmail.com | +201066080070 | Cairo, Egypt</p>
-        <p>&copy; 2025 Basel Mohamed Abouelnour. All Rights Reserved.</p>
-    </footer>
+<script>
+  // Mobile menu
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
 
-    <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
+  // Dark mode toggle
+  const themeToggle = document.getElementById("theme-toggle");
+  const body = document.body;
+  const storedTheme = localStorage.getItem("theme");
+  if (storedTheme) body.classList.toggle("dark", storedTheme === "dark");
+  themeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
+  });
 
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        });
+  // Typing effect
+  const typingText = document.getElementById("typing-text");
+  const text = "Hello, I'm Basel Mohamed Abouelnour";
+  let index = 0;
+  function typeEffect() {
+    if (index < text.length) {
+      typingText.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 80);
+    }
+  }
+  typeEffect();
 
-        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-        }));
-    </script>
+  // Fade-up on scroll
+  const faders = document.querySelectorAll('.fade-up');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('appear');
+    });
+  }, { threshold: 0.2 });
+  faders.forEach(fader => observer.observe(fader));
+
+  // Navbar scroll effect
+  window.addEventListener("scroll", () => {
+    document.querySelector(".header").classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
 </body>
 </html>
